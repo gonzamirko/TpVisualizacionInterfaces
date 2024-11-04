@@ -1,0 +1,67 @@
+*{
+    padding: 0em;
+    margin: 0em;
+    font-family:sans-serif ;
+}
+header{
+    display: flex;
+    padding: 0.2em;
+ text-align: center;
+ /*justify-content: space-around;*/
+    align-items: center;
+    padding-right: 1% ;
+    background-color: #167358;
+    
+}
+header,  nav{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 16em;
+    color: white;
+}
+
+.logoNombre{
+    display: flex;
+    padding-right: 13em;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    width: 40%;
+    height: auto;
+    
+}
+
+
+nav a{
+   padding: 0.5em;
+   margin: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.imagenUno{
+    width: 50em;
+    height: auto;
+}
+
+.textoUno{
+    font-size: 1.4em;
+
+}
+ button a{
+    text-decoration: none;
+    border-radius: 10em;
+   
+}
+
+.contenedorUno{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+}
+ .slogan{
+   position: relative;
+   top: 5em;
+   left: 3em;
+}
