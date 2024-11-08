@@ -1,8 +1,40 @@
+
 *{
     padding: 0em;
     margin: 0em;
     font-family:sans-serif ;
+   /* box-sizing: border-box;*/
 }
+
+/* Aplicar box-sizing para controlar los desbordes */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Evitar scroll horizontal */
+body {
+    overflow-x: hidden;
+}
+
+/* Ajustes en el contenedor principal */
+#beneficio_contenedor {
+    padding: 5%;
+    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 100%; /* Limitar el ancho máximo */
+}
+
+/* Reducir margen lateral en footer y header */
+header, footer {
+    padding: 0 2%;
+}
+
+
+
+
 header{
     display: flex;
     padding: 0.2em;
@@ -25,13 +57,13 @@ header,  nav{
     padding-right: 13em;
     justify-content: space-around;
     align-items: center;
+    margin-left: 2%;
 }
 #logo{
     width: 40%;
     height: auto;
     
 }
-
 
 nav a{
    padding: 0.5em;
@@ -43,12 +75,15 @@ nav a{
 .imagenUno{
     width: 50em;
     height: auto;
+    position: relative;
+    bottom: 57px;
+    margin-right: 2%;
 }
 
 .textoUno{
     font-size: 1.4em;
-
 }
+
  button a{
     text-decoration: none;
     border-radius: 10em;
@@ -58,10 +93,114 @@ nav a{
 .contenedorUno{
     display: flex;
     justify-content: space-around;
-   align-items: center;
+    align-items: center;
+    gap: 10px;
 }
- .slogan{
+
+/*-agrego mateo-*/
+.contenedorOpcionesHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.opcionHeader{
+    font-size: 20px;
+}
+
+.textoUno_y_botonUno{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    gap: 40px;
+}
+
+.contenedorSlogan{
+   margin-right: 45%;
    position: relative;
-   top: 5em;
-   left: 3em;
+   top: 3em;
+   left: 1em;
 }
+
+.slogan{
+   font-size: 50px;
+   color: #12614b;
+ }
+
+.botonUno{
+   background-color: #167358;
+   color: #f0fff6;
+   padding: 16px 35px;
+   border: none;
+   border-radius: 6px;
+   font-size: 17px;
+}
+
+/*------------*/
+
+#beneficio_contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+    grid-template-rows: auto ;
+    column-gap: 5%;
+    row-gap: 3%;
+    padding: 7%;
+    margin: 3%;
+    font-size: 130%;
+   
+}
+
+#beneficio_contenedor h1 {
+    display: flex;
+    position: relative;
+    left: 75%;
+    bottom: 50%;
+}
+#h2_nuestra_cartilla{
+    text-align: center;
+}
+
+#contenedor_cartilla{
+    display: flex;
+    padding-left: 13%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 15%;
+    padding: 5%;
+}
+
+#contenedor_cartilla, img{
+    width: 70%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    background-color: #167358;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+   
+}
+
+#logo_nombre_direccion{
+    position: relative;
+    right: 5%;
+    
+}
+
+#gamp_footer{
+font-size: 400%;
+}
+
+#contenedor_de_sedes_prepagas_plantillas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 35%;
+    position: relative;
+    right: 15%;
+    font-size: 110%;
+}
+
+
