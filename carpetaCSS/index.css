@@ -1,0 +1,364 @@
+body{
+    margin: 0%;
+    padding: 0%;
+ }
+ /*HEADER*/
+ header{
+     position: fixed;
+     top: 0;left: 0;right: 0;
+     padding: 0.5rem 5%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 1000; 
+     background-color: white;
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+ }
+ header #toggler{/*sirve para que se elimine el checkbox pero q su funcion se la deje al icono*/
+     display: none;
+ }
+ header .fa-bars{ /*menu que no va a aparecer el despliegue a menos q este en menos de 790px*/
+     font-size: 3rem;
+     color: #333;
+     border-radius: .5rem;
+     padding: .5rem 1.5rem;
+     cursor: pointer;/*es una propiedad que cambia el cursor del ratón a una mano con el dedo apuntando cuando se pasa sobre un elemento.*/
+     border: .1rem solid rgba(0,0,0,.3);
+     display: none;
+ }
+ 
+ header .logo h1 {
+     color: #167358;
+     font-size: 3rem;
+ }
+ a{
+     text-decoration: none;
+ }
+ 
+  .navbar{
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .icons{
+     display: flex;
+ }
+ header  .navbar a {
+     font-size: 1.3rem;
+     padding: 0 1rem;
+     color: #666;
+     text-decoration: none;
+ }
+ a{
+     font-family:sans-serif ;
+ }
+ header .icons a {
+     font-size: 1.6rem;
+     color:#666;
+     margin-left: 1rem;
+     text-decoration: none;
+ }
+ header .navbar a:hover{
+    /* font-size:1.9rem ;*/
+    color: #167358;
+ }
+ 
+ /*MAIN*/
+ /*Imagen Hero*/
+ /*seccion de referencia osea la madre*/
+ .imagen-hero{
+     position: relative;
+ }
+ .imagen-hero img{
+     width: 100%;
+     height: auto;
+ }
+ .ocultar{
+     display: none;
+ }
+ .content{
+     position: absolute;
+     left: 4%;
+     top: 55%;
+     transform: translateY(-50%);
+ }
+ /*........................*/
+ .imagen-hero .content h1{
+     font-size: 3.3rem;
+     font-family:sans-serif ;
+     color: #333;
+ }
+ 
+ .imagen-hero .content p{
+     font-size: 1.3rem;
+     font-family:sans-serif ;
+ 
+ 
+ }
+ .botonUno{
+     background-color: #167358;
+     color: #f0fff6;
+     padding: 16px 30px;
+     border: none;
+     border-radius: 6px;
+     font-size: 17px;
+     margin-top: 1rem;
+     cursor: pointer;
+  }
+ 
+ /*BENEFICIOS*/
+ .beneficios{
+     margin-top: 5rem;
+ }
+ .beneficios h2{
+    display: flex;
+    justify-content: left;
+    margin-left: 3.5rem;
+ }
+ .beneficios .descripcion{
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr 1fr ;
+    
+ }
+ .beneficios .descripcion div{
+     margin-left: 1.8rem;
+ }
+ .beneficios .descripcion .items{
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ h2{
+     font-size: 2.5rem;
+     padding-top:0.5rem;
+     color:  #666;
+     font-family: sans-serif ;
+ }
+ 
+ .beneficios .descripcion div h3{
+     font-size: 1.5rem;
+     font-family: sans-serif;
+     font-weight: bold; 
+     color: #167358;
+ 
+ }
+ .beneficios .descripcion div p{
+     font-size: 1.2rem;
+     color:  #333;
+     font-family: sans-serif;
+ }
+ i {
+     position: relative;
+     z-index: 2;
+     font-size: 2.5rem;
+     color: #333;
+     padding-top: 2rem;
+     padding-left: 1rem;
+ }
+ .beneficios .descripcion .icons-cuadrado{
+     display: inline-block;
+     position: relative;
+     margin-top: 0.8rem;
+ }
+ .beneficios .descripcion .icons-cuadrado::before{
+     content: '';  /* No se necesita texto, solo el cuadrado */
+     position: absolute;
+     border-radius: 6px;
+     top: 14px;
+     left: 0;
+     width: 75px;  /* Tamaño del cuadrado */
+     height: 75px;  /* Tamaño del cuadrado */
+     background-color: rgb(46, 146, 118);  /* Color del cuadrado */
+     z-index: 1;  /* El cuadrado estará detrás del icono */
+ }
+ 
+ /*cartilla*/
+ .cartilla{
+     margin-top: 3rem;;
+ }
+ .cartilla h2{
+     display: flex;
+     justify-content: left;
+     margin-left: 3.1rem;
+ }
+ h3{
+     font-family: sans-serif;
+     font-weight: normal;
+     font-size: 1.5rem;
+     color: #333;
+ }
+ .cartilla div{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding: 0.5rem 1.5rem  ;
+     
+ }
+ .cartilla div .descripcion-especialidades {
+     display: flex;
+     flex-direction: column;
+ }
+ img{
+     width: 20rem;
+ }
+ .cartilla i {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+  /*urgencias*/
+ .urgencias{
+     background-color: #167358;
+     display: flex;
+     gap: 1rem;
+     justify-content: space-between;
+     /*padding: 1.5rem ;*/
+ }
+ .urgencias div{
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+     align-items: center;
+     padding: 1rem 0.8rem;
+    
+ }
+ .urgencias h3{
+     color: #333;
+     font-size: 1.2rem;
+ }
+ .urgencias div i{
+     padding: 0;
+ }
+ /*---------------------------------------------------------------*/
+ footer{
+     display: flex;
+     background-color:hsl(163, 74%, 20%);
+     justify-content: space-around;
+     padding-bottom: 5rem;
+ }
+ 
+ footer .pie-logo{
+     display: flex;
+     flex-direction: column;
+ }
+ footer .pie-logo h1{
+     font-family: sans-serif;
+     font-size: 3rem;
+     color: #fff;
+     padding-top: 2rem;
+ }
+ footer p {
+     font-size: 1.2rem;
+     color:  #fff;
+     font-family: sans-serif;
+ }
+ 
+ footer .icons-pie i{
+     font-size: 2rem;
+     color:#fff;
+     padding-right:  1.5rem ;
+ }
+ footer  h2{
+      color: #fff;
+      font-size: 2rem;
+      font-weight: normal;
+      padding-top: 2.5rem;
+ }
+ 
+ /*MEDIA QUERY*/
+ /*tableta*/
+ @media (max-width:1024px){
+ 
+     html{
+         font-size: 55.5%;
+     }
+    
+     .botonUno{
+         font-size: 1.5rem;
+         padding: 1rem 1rem ;
+     }
+ 
+     .imagen-hero .content p{
+         font-size: 1.6rem;
+     }
+     /*-----------*/
+     .beneficios .descripcion div p{
+         font-size: 1.5rem;
+     }
+ 
+     
+     /*----------------*/
+     .beneficios .descripcion .icons-cuadrado::before{
+         top: 10px;
+         left: 0;
+         width: 40px;  /* Tamaño del cuadrado */
+         height: 40px;  /* Tamaño del cuadrado */
+         z-index: 1;  /* El cuadrado estará detrás del icono */
+     }
+     /**/
+     .urgencias div{
+         display: flex;
+         flex-direction: row;
+         gap: 2rem;
+         align-items: center;
+         padding: 0.5rem 1rem;
+     }
+ 
+ 
+ 
+ }
+ /*celular*/
+ @media (max-width:500px){
+ 
+ .imagen-hero{
+     margin-top: 6rem;
+ }
+ .imagen-hero .content .ocultar-dos {
+     display: none;
+ 
+ }
+ .imagen-hero p{
+     display: none;
+ }
+ .ocultar {
+     display: block;
+ }
+ .imagen-hero .content .ocultar h1{
+     font-size: 2.5rem;
+ }
+ .botonUno{
+     margin-top: 0rem;
+ }
+ 
+ 
+ /*------------------------------*/
+ .beneficios .descripcion h3{
+     margin-left: 2rem;
+ }
+ .beneficios .descripcion p{
+     margin-left: 2rem;
+ }
+ .beneficios .descripcion{
+     display: flex;
+     flex-direction: column;
+ }
+ i{
+     padding-top: 2.5rem;
+ }
+ /*---------------*/
+ html{
+     font-size: 50%;
+ }
+ 
+ /*---------------------------------------------*/
+ .cartilla div .descripcion-especialidades.farmacia{
+     display: none;
+ }
+ 
+ /*..........................*/
+ .urgencias{
+     display: grid;
+     grid-template-columns: 1fr 1fr ;
+ }
+ }

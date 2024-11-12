@@ -1,0 +1,183 @@
+body{
+    margin: 0%;
+    padding: 0%;
+ }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-contenedor{
+    margin: 4%;
+    margin-top: 15.5%;
+    border: solid 2px #1b1a1a;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.cuenta, .afiliacion{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.afiliacion{
+    margin-bottom: 4%;
+}
+
+/*----------------------------------------------------------------------------------------*/
+footer{
+    display: flex;
+    background-color:hsl(163, 74%, 20%);
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+footer .pie-logo{
+    display: flex;
+    flex-direction: column;
+}
+footer .pie-logo h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 2rem;
+}
+footer p {
+    font-size: 1.2rem;
+    color:  #fff;
+    font-family: sans-serif;
+}
+
+footer .icons-pie i{
+    font-size: 2rem;
+    color:#fff;
+    padding-right:  1.5rem ;
+}
+footer  h2{
+     color: #fff;
+     font-size: 2rem;
+     font-weight: normal;
+     padding-top: 2.5rem;
+}
+
+footer{
+    margin-top: 8%;
+}
+
+header{
+    position: absolute;
+    top: 0;left: 0;right: 0;
+    padding: 0.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; 
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header #toggler{/*sirve para que se elimine el checkbox pero q su funcion se la deje al icono*/
+    display: none;
+}
+header .fa-bars{ /*menu que no va a aparecer el despliegue a menos q este en menos de 790px*/
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;/*es una propiedad que cambia el cursor del ratón a una mano con el dedo apuntando cuando se pasa sobre un elemento.*/
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+header .logo h1 {
+    color: #167358;
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+}
+
+ .navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons{
+    display: flex;
+}
+header  .navbar a {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    color: #666;
+    text-decoration: none;
+}
+a{
+    font-family:sans-serif ;
+}
+header .icons a {
+    font-size: 1.6rem;
+    color:#666;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+header .navbar a:hover{
+   /* font-size:1.9rem ;*/
+   color: #167358;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+.titulo{
+    font-size: 30px;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-count{
+    position: relative;
+    bottom: 3rem;
+}
+
+.data-af{
+    position: relative;
+    top: 2.5rem;
+    margin-bottom: 6%;
+}
+
+.data-count,.data-af{
+    right: 12rem;
+}
+
+.data-af{
+    right: 19rem;
+}
+
+.txt{
+    font-size: 20px;
+    font-family:sans-serif ;
+}
+
+.titulo-container{
+    border-bottom: 2px solid #1b1a1a;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    margin-bottom: 90px;
+}
+
+h2{
+    font-size: 3.3rem;
+    font-family:sans-serif ;
+    color: #333;
+}
